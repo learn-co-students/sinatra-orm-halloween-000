@@ -1,7 +1,7 @@
 class RootController < HalloweenController
 
 	get "/" do 
-		erb :'index'
+		erb :'root/index'
 	end
 
 end

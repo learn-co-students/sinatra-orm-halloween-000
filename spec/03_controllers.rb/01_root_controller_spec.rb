@@ -4,9 +4,12 @@ describe "RootController" do
   before do
     get '/'
   end
+
   it "responds with a 200 status code" do
+    # binding.pry
     expect(last_response).to be_ok
   end
+
   it "welcomes you to halloween, the greatest holiday" do
     expect(last_response.body).to include("<h1>Welcome to Halloween</h1>")
     expect(last_response.body).to include("<h2>The greatest holiday</h2>")
