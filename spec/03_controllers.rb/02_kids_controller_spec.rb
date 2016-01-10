@@ -61,6 +61,8 @@ describe "KidsController" do
     end
   end
 
+###The above and below are redundnt and a bit wierd 
+
   describe "GET /kids/:id" do 
     before do 
       @mindy = Kid.create(:name => "Mindy Kaling", :age => 12, :feeling => "Sick")
