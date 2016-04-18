@@ -9,7 +9,7 @@ describe "House" do
 
   let(:cottage)  { House.create(:address => "132 Seabridge Ln") }
 
-  it "has many cadies" do
+  it "has many candies" do
     skittles = Candy.create(:name => "Skittles", :house_id => cottage.id)
     m_and_ms = Candy.create(:name => "M&Ms", :house_id => cottage.id)
     expect { cottage.candies }.to_not raise_error
