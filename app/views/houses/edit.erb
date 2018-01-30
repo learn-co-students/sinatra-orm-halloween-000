@@ -1,3 +1,11 @@
 <h1>Edit House</h1>
 
-<!-- form goes here -->
+
+<form action="/houses/<%=@house.id%>" method="POST">
+  <input name="_method" type="hidden" value="patch"/>
+  <label for="address">Address</label>
+  <input id="address" type="text" name="address"/></br>
+
+
+  <input type="submit" value="Submit"></input>
+</form>
